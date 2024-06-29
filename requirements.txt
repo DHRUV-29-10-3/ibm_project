@@ -1,1 +1,7 @@
-numpy = 1.26.4
+numpy
+xgboost
+joblib
+streamlit
+pandas
+numpy
+scikit-learn
