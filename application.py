@@ -50,11 +50,10 @@ input_data = preprocess_input(age, gender, ap_hi, ap_lo, bmi, cholesterol, gluc,
 
 # Make predictions
 if st.sidebar.button('Predict'):
-    try:
-        prediction = loaded_model.predict(input_data)
-        if prediction[0] == 1:
-            st.write('The model predicts that the individual has a high chance of heart problems.')
-        else:
-            st.write('The model predicts that the individual has low chance of heart problems.')
-    except Exception as e:
-        st.error(f"An error occurred: {e}")
+
+    prediction = loaded_model.predict(input_data)
+    if prediction[0] == 1:
+        st.write('The model predicts that the individual has a high chance of heart problems.')
+    else:
+        st.write('The model predicts that the individual has low chance of heart problems.')
+
