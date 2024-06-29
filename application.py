@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import pandas as pd
-
+from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 
 # Load the model from the Pickle file
 loaded_model = joblib.load('pipeline.joblib')
