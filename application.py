@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # Load the model from the Pickle file
-with open('model3.pkl', 'rb') as f:
+with open('pipeline.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 
 # Preprocessing function
