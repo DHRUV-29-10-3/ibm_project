@@ -1,10 +1,10 @@
 import streamlit as st
-import pickle
+import joblib
 import pandas as pd
 
 
 # Load the model from the Pickle file
-loaded_model = pickle.load(open("pipeline.pkl", "rb"))
+loaded_model = joblib.load('pipeline.joblib')
 
 # Preprocessing function
 def preprocess_input(age, gender, ap_hi, ap_lo, bmi, cholesterol, gluc, smoke, alco, active):
