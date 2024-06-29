@@ -1,9 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import StandardScaler, OrdinalEncoder
-from xgboost import XGBClassifier
+
 
 # Load the model from the Pickle file
 with open('model3.pkl', 'rb') as f:
