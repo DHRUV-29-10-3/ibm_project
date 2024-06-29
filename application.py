@@ -4,8 +4,7 @@ import pandas as pd
 
 
 # Load the model from the Pickle file
-with open('pipeline.pkl', 'rb') as f:
-    loaded_model = pickle.load(f)
+loaded_model = pickle.load(open("pipeline.pkl", "rb"))
 
 # Preprocessing function
 def preprocess_input(age, gender, ap_hi, ap_lo, bmi, cholesterol, gluc, smoke, alco, active):
