@@ -13,12 +13,12 @@ def preprocess_input(age, gender, ap_hi, ap_lo, bmi, cholesterol, gluc, smoke, a
         'gender': [gender],
         'ap_hi': [ap_hi],
         'ap_lo': [ap_lo],
-        'bmi': [bmi],
         'cholesterol': [cholesterol],
         'gluc': [gluc],
         'smoke': [smoke],
         'alco': [alco],
-        'active': [active]
+        'active': [active],
+        'bmi': [bmi]
     })
 
     # Apply the same preprocessing steps as during training
